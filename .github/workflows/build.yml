@@ -30,6 +30,8 @@ jobs:
         run: ./gradlew build
       - name: Reobf
         run: ./gradlew createReobfBundlerJar
+      - name: ls
+        run: cd /home/runner/work && ls -R
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
